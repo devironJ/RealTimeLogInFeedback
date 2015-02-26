@@ -1,0 +1,10 @@
+<form>
+    <input type="text" ng-model= firstName placeholder="First Name"><br>
+    <input type="text" ng-model= favNumber placeholder="Favorite Number"><br><br>
+    <button ng-click="saveUser()">Submit</button>
+</form>
+
+<div>
+    <p>Hello: <span ng-bind="firstName"></span>, nice to meet you.</p>
+    <p>Your Secret Code is: {{createNumberCode(favNumber)}}</p>
+</div>

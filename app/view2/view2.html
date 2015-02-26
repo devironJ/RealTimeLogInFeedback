@@ -1,0 +1,14 @@
+<p>This is the partial for view 2.</p>
+<!--From witout Firebase example:-->
+<!--<form ng-init=getUser()>-->
+
+<form ng-init = getFirebase()>
+    <input type="text" ng-model= firstName placeholder="Enter First Name"><br>
+    <input type="text" ng-model= secretCode placeholder="Enter Secret Code"><br><br>
+    {{checkUser(firstName,secretCode)}}
+
+    <p>{{firebaseData}}</p>
+
+    <!--From without Firebase example:-->
+    <!--<br><p>{{firstNameCheck}} {{secretCodeCheck}}</p>-->
+</form>
